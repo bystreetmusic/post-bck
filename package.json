@@ -1,0 +1,23 @@
+{
+  "name": "post-bck",
+  "version": "1.0.0",
+  "main": "src/api.js",
+  "scripts": {
+    "dev": "tsx watch src/api.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "prisma": "^6.1.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.1",
+    "@prisma/client": "^6.1.0",
+    "fastify": "^5.2.0"
+  }
+}

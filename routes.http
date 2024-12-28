@@ -1,0 +1,14 @@
+GET http://localhost:3333/post
+
+###
+
+POST http://localhost:3333/post
+Content-Type: application/json
+
+{
+    "titulo" : "deus e maior",
+	"musico" : "irmao teodoro",
+    "genero" : "gospel",
+    "imagem" : "okok",
+    "descricao" : "nos sei mais quanto"
+}
