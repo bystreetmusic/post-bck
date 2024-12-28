@@ -4,7 +4,11 @@ import { postRoutes } from "./postRoutes";
 
 const app  =  fastify()
 app.register(postRoutes)
-app.register(fastifyCors, { origin: "*" })
+app.register(fastifyCors, {
+    origin: 'https://adm-post.vercel.app', // Permitir apenas este domínio
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
+    allowedHeaders: ['Content-Type', 'Authorization'], // Cabeçalhos permitidos
+});
 
 app.listen({
     host: "0.0.0.0",
